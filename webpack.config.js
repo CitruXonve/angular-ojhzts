@@ -31,7 +31,7 @@ module.exports = async (env, argv) => {
             rules: [
                 {
                     test: /(\.component)?\.css$/i,
-                    use: [MiniCssExtractPlugin.loader, "css-loader"],
+                    use: ["style-loader", "css-loader"],
                 },
                 {
                     test: /(\.component)?\.s[ac]ss$/i,
